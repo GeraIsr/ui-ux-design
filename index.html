@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design - Der Guide für Einsteiger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UI/UX Design</h1>
+        <p>Verstehen Sie, wie moderne Apps und Webseiten funktionieren – einfach erklärt!</p>
+    </header>
+
+    <div class="container">
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterCards('all')">Alle</button>
+            <button class="filter-btn" onclick="filterCards('grundlagen')">Grundlagen</button>
+            <button class="filter-btn" onclick="filterCards('wichtigkeit')">Wichtigkeit</button>
+            <button class="filter-btn" onclick="filterCards('werden')">Beruf</button>
+            <button class="filter-btn" onclick="filterCards('tipps')">Tipps</button>
+        </div>
+
+        <div class="cards-container" id="cardsContainer">
+            <div class="card" data-category="grundlagen">
+                <div class="card-icon">🎨</div>
+                <h3>Was ist UI?</h3>
+                <p>Die visuelle Oberfläche: Buttons, Farben, Symbole und Schriftarten</p>
+                <span class="category">Grundlagen</span>
+                <a href="ui-grundlagen.html" class="card-link">Mehr erfahren →</a>
+            </div>
+
+            <div class="card" data-category="grundlagen">
+                <div class="card-icon">💫</div>
+                <h3>Was ist UX?</h3>
+                <p>Die Benutzererfahrung: Intuitivität, Einfachheit und Freude</p>
+                <span class="category">Grundlagen</span>
+                <a href="ux-grundlagen.html" class="card-link">Mehr erfahren →</a>
+            </div>
+
+            <div class="card" data-category="wichtigkeit">
+                <div class="card-icon">🚀</div>
+                <h3>Warum Design zählt</h3>
+                <p>Wie gutes UI/UX Nutzer bindet und schlechtes vertreibt</p>
+                <span class="category">Wichtigkeit</span>
+                <a href="design-wichtigkeit.html" class="card-link">Mehr erfahren →</a>
+            </div>
+
+            <div class="card" data-category="wichtigkeit">
+                <div class="card-icon">🍔</div>
+                <h3>Praktisches Beispiel</h3>
+                <p>Food-Liefer-App: 3 Klicks vs. endlose Menüs</p>
+                <span class="category">Wichtigkeit</span>
+                <a href="food-delivery-beispiel.html" class="card-link">Mehr erfahren →</a>
+            </div>
+
+            <div class="card" data-category="werden">
+                <div class="card-icon">🎯</div>
+                <h3>Designer werden</h3>
+                <p>Empathie, Kreativität, Logik – kein Programmierwissen nötig!</p>
+                <span class="category">Beruf</span>
+                <a href="designer-werden.html" class="card-link">Mehr erfahren →</a>
+            </div>
+
+            <div class="card" data-category="tipps">
+                <div class="card-icon">💡</div>
+                <h3>Top Design-Tipps</h3>
+                <p>Einfachheit ist König: Weniger ist mehr!</p>
+                <span class="category">Tipps</span>
+                <a href="design-tipps.html" class="card-link">Mehr erfahren →</a>
+            </div>
+        </div>
+
+        <div class="subscribe-container">
+            <p class="subscribe-text">Bleiben Sie über neue UI/UX-Entwicklungen informiert</p>
+            <input type="email" placeholder="Ihre E-Mail-Adresse" id="emailInput">
+            <button onclick="subscribeNewsletter()">Anmelden</button>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modal-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 UI/UX Design Guide | Erstellt von <strong>Georgiy</strong> | Alle Rechte vorbehalten | <a href="datenschutz.html">Datenschutzerklärung</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
